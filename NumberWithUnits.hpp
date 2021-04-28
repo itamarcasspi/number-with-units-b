@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <fstream>
 #include <sstream>
-
+using namespace std;
 namespace ariel
 {
 
@@ -17,7 +17,7 @@ namespace ariel
 
     public:
         //constructor
-        NumberWithUnits(double val,std::string uni);
+        NumberWithUnits(double val,const string & uni);
 
         static void read_units(std::ifstream &file_name);
 

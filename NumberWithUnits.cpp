@@ -9,9 +9,10 @@ namespace ariel
     //static map so it is initialized globally and accesible from all units
     static map<string, map<string, double>> CONVERSION_MAP;
 
-    NumberWithUnits::NumberWithUnits(double val,string uni)
+    NumberWithUnits::NumberWithUnits(double val,const string & uni)
     {
         CONVERSION_MAP.at(uni); //if not registered then throw exception
+
 
         this->value = val;
         this->unit = uni;
